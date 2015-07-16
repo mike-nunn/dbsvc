@@ -1,0 +1,14 @@
+{
+  "name": "dbsvc",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "express": "~4.11.2",
+    "morgan": "~1.5.1",
+    "odbc": "~0.6.12",
+    "edit-google-spreadsheet": "~0.2.19",
+    "squel": "~4.0.0"
+  }
+}
