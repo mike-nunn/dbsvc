@@ -1,0 +1,11 @@
+Main file to run is attrition.js
+
+this loads module form db.js to get data from thankQ
+
+and google.js to post manipulated data to google sheets
+
+Requires a file called creds.js (not tracked) with the following:
+
+var fs = require('fs');
+module.exports.cn = 'DSN=???????; UID=????; PWD=????????';
+module.exports.key = fs.readFileSync('/home/mike/.keys/google-drive.pem').toString('ascii');
