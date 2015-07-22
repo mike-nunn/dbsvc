@@ -8,4 +8,4 @@ Requires a file called creds.js (not tracked) with the following:
 
 var fs = require('fs');
 module.exports.cn = 'DSN=???????; UID=????; PWD=????????';
-module.exports.key = fs.readFileSync('/home/mike/.keys/google-drive.pem').toString('ascii');
+module.exports.key = fs.readFileSync('/path/google-drive.pem').toString('ascii');
