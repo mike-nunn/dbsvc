@@ -1,9 +1,0 @@
-
-use KARU_thankQ_Live;
-select *  from
- (select SERIALNUMBER, PLEDGESTATUS, CREATED, CREATEDBY, MODIFIED, MODIFIEDBY from PLEDGEHEADER where PLEDGESTATUS='Active') fred
- join 
- (select serialnumber, title, firstname, keyname, CREATED, CREATEDBY, MODIFIED, MODIFIEDBY from CONTACT where CONTACTTYPE='Individual') donors
- on 
- donors.SERIALNUMBER = fred.SERIALNUMBER
- where  cast(donors.CREATED as DATE) = '2015-07-10';
