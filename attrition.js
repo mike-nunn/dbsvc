@@ -30,7 +30,7 @@ function inDay(value, arr){
 var deletedSNs = [];
 for (var j = 0, jlen = yest.length; j < jlen; j++) {
   if(!(inDay(yest[j].serialnumber, tod))){
-      deletedSNs.push([dateTime, yest[j].serialnumber]);
+      deletedSNs.push([dateTime, "\'" + yest[j].serialnumber]);
   }
 }
 
@@ -39,7 +39,7 @@ for (var j = 0, jlen = yest.length; j < jlen; j++) {
 var newSNs = [];
 for (var j = 0, jlen = tod.length; j < jlen; j++) {
   if(!(inDay(tod[j].serialnumber, yest))){
-      newSNs.push([dateTime, tod[j].serialnumber]);
+      newSNs.push([dateTime, "\'" + tod[j].serialnumber]);
   }
 }
 
